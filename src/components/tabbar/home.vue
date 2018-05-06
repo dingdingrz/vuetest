@@ -61,7 +61,7 @@ export default {
                 // console.log(res)
                 if(res.data.status==0){
                     this.bannerList = res.data.message
-                    console.log(this.bannerList)
+                    // console.log(this.bannerList)
                 }
                
             })

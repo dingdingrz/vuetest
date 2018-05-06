@@ -1,7 +1,11 @@
 <template>
   <div id="app" class="page">
     
-    <mt-header fixed title="V-U-E-T-E-S-T"></mt-header>
+    <mt-header fixed title="V-U-E-T-E-S-T">
+			 <!-- <mt-button icon="back" slot="left" v-if="$route.path !='home'" @click = '$router.go(-1)'>返回</mt-button> -->
+				<mt-button  type="danger" icon="back" slot="left" v-if="$route.path !='home'" @click = '$router.go(-1)' >返回</mt-button>
+
+		</mt-header>
 
     
     <router-view/>
@@ -39,12 +43,20 @@ export default {
   padding: 0;
   margin: 0;
 }
+.mint-header-button  {
+	height: 40px;
+
+
+}
 
 /* .header {
   height: 40px;
 } */
 .page{
   padding: 40px 0 50px 0;
+}
+.pages{
+	padding: 0 10px;
 }
 
 </style>

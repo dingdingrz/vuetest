@@ -42,7 +42,7 @@ export default new Router({
       component :GoodsDetail
     },
     {
-      path :'/newsDetail',
+      path :'/newsDetail/:id',
       component :NewsDetail
     },
     {
